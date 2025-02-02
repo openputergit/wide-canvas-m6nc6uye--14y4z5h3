@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeHome Furniture</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2B6CB0;
+            --surface: #EDF2F7;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .neo-box {
+            border-radius: 20px;
+            background: #f0f4f8;
+            box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+            transition: transform 0.3s ease;
+        }
+        .neo-box:hover {
+            transform: translateY(-5px);
+        }
+        .neo-button {
+            border-radius: 10px;
+            background: #f0f4f8;
+            box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;
+            transition: all 0.3s ease;
+        }
+        .neo-button:active {
+            box-shadow: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;
+        }
+        .neo-input {
+            border-radius: 10px;
+            background: #f0f4f8;
+            box-shadow: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <nav class="neo-box p-4 m-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">LuxeHome</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="neo-button px-4 py-2">Home</a>
+                <a href="#" class="neo-button px-4 py-2">Shop</a>
+                <a href="#" class="neo-button px-4 py-2">About</a>
+                <a href="#" class="neo-button px-4 py-2">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="neo-button p-2"><i class="bi bi-list text-xl"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container mx-auto px-4 py-8">
+        <div class="neo-box p-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-6 md:mb-0">
+                <h2 class="text-4xl font-bold mb-4">Modern Furniture for Modern Living</h2>
+                <p class="text-gray-600 mb-6">Discover our collection of elegant and comfortable furniture pieces.</p>
+                <button class="neo-button px-8 py-3 text-blue-600 font-semibold">Shop Now</button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" alt="Modern furniture" class="rounded-lg w-full">
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <h3 class="text-2xl font-semibold mb-6">Featured Products</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product Cards -->
+            <div class="neo-box p-4">
+                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267" alt="Sofa" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h4 class="font-semibold mb-2">Modern Sofa</h4>
+                <p class="text-gray-600 mb-2">$899</p>
+                <button class="neo-button w-full py-2 text-blue-600">Add to Cart</button>
+            </div>
+            <div class="neo-box p-4">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91" alt="Chair" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h4 class="font-semibold mb-2">Accent Chair</h4>
+                <p class="text-gray-600 mb-2">$299</p>
+                <button class="neo-button w-full py-2 text-blue-600">Add to Cart</button>
+            </div>
+            <div class="neo-box p-4">
+                <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126" alt="Table" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h4 class="font-semibold mb-2">Coffee Table</h4>
+                <p class="text-gray-600 mb-2">$499</p>
+                <button class="neo-button w-full py-2 text-blue-600">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="container mx-auto px-4 py-8">
+        <div class="neo-box p-8">
+            <h3 class="text-2xl font-semibold mb-6">Subscribe to Our Newsletter</h3>
+            <div class="flex flex-col md:flex-row gap-4">
+                <input type="email" placeholder="Enter your email" class="neo-input px-4 py-2 flex-grow">
+                <button class="neo-button px-8 py-2 text-blue-600 font-semibold">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="neo-box p-8 m-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-semibold mb-4">About Us</h4>
+                <p class="text-gray-600">Quality furniture for your home and office spaces.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-600">
+                    <li><i class="bi bi-geo-alt"></i> 123 Furniture St</li>
+                    <li><i class="bi bi-telephone"></i> +1 234 567 890</li>
+                    <li><i class="bi bi-envelope"></i> info@luxehome.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="neo-button p-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="neo-button p-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="neo-button p-2"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.querySelector('.bi-list').parentElement;
+        const nav = document.querySelector('nav div div:nth-child(2)');
+        
+        menuButton.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('right-4');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('neo-box');
+        });
+
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('button:not(:first-child)');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const product = button.parentElement;
+                const productName = product.querySelector('h4').textContent;
+                alert(`${productName} added to cart!`);
+            });
+        });
+
+        // Newsletter subscription
+        const subscribeButton = document.querySelector('section button');
+        const emailInput = document.querySelector('input[type="email"]');
+        
+        subscribeButton.addEventListener('click', () => {
+            if (emailInput.value) {
+                alert('Thank you for subscribing!');
+                emailInput.value = '';
+            } else {
+                alert('Please enter your email address.');
+            }
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
